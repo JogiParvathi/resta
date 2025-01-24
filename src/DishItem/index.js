@@ -32,11 +32,10 @@ const DishItem = ({
       <button className="button" type="button" onClick={onDecreaseQuantity}>
         -
       </button>
-      <p className='qunatity'>{getQuantity}</p>
+      <p className="qunatity">{getQuantity}</p>
       <button className="button" type="button" onClick={onIncreaseQuantity}>
         +
       </button>
-
     </div>
   )
 
@@ -46,7 +45,8 @@ const DishItem = ({
         className={`veg-border ${dishType === 1 ? 'non-veg-border' : ''} me-3`}
       >
         <div
-          className={`veg-round ${dishType === 1 ? 'non-veg-round' : ''} `} />
+          className={`veg-round ${dishType === 1 ? 'non-veg-round' : ''} `}
+        />
       </div>
       <div className="dish-details-container">
         <h1 className="dish-name">{dishName}</h1>
