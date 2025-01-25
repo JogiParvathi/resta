@@ -24,7 +24,7 @@ const DishItem = ({
 
   const getQuantity = () => {
     const cartItem = cartItems.find(item => item.dishId === dishId)
-    return cartItem ? cartItem.qunatity : 0
+    return cartItem ? cartItem.quantity : 0
   }
 
   const renderControllerButton = () => (
@@ -32,7 +32,7 @@ const DishItem = ({
       <button className="button" type="button" onClick={onDecreaseQuantity}>
         -
       </button>
-      <p className="qunatity">{getQuantity}</p>
+      <p className="quantity">{getQuantity}</p>
       <button className="button" type="button" onClick={onIncreaseQuantity}>
         +
       </button>
