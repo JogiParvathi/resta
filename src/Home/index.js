@@ -58,10 +58,10 @@ const Home = () => {
         dishDescription: eachDish.dish_description,
         dishAvailability: eachDish.dish_availability,
         dishType: eachDish.dish_type,
-        addOnCat: eachDish.dish_addOnCat,
+        addOnCat: eachDish.addonCat,
       })),
     }))
-  const fetchRestaurantApi = async () => {
+    const fetchRestaurantApi = async () => {
     const api =
       'https://apis2.ccbp.in/restaurant-app/restaurant-menu-list-details'
     const apiResponse = await fetch(api)
