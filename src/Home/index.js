@@ -61,7 +61,7 @@ const Home = () => {
         addOnCat: eachDish.addonCat,
       })),
     }))
-    const fetchRestaurantApi = async () => {
+  const fetchRestaurantApi = async () => {
     const api =
       'https://apis2.ccbp.in/restaurant-app/restaurant-menu-list-details'
     const apiResponse = await fetch(api)

@@ -1,6 +1,6 @@
 import './index.css'
 
-const Header = ({cartItems,restaurantName}) => {
+const Header = ({cartItems, restaurantName}) => {
   const getCartItemsCount = () =>
     cartItems.reduce((acc, item) => acc + item.quantity, 0)
 
