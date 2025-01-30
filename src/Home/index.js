@@ -58,7 +58,7 @@ const Home = () => {
         dishDescription: eachDish.dish_description,
         dishAvailability: eachDish.dish_availability,
         dishType: eachDish.dish_type,
-        addOnCat: eachDish.addonCat,
+        addoncat: eachDish.addoncat,
       })),
     }))
   const fetchRestaurantApi = async () => {

@@ -15,7 +15,7 @@ const DishItem = ({
     dishDescription,
     dishImage,
     dishCalories,
-    addOnCat,
+    addoncat,
     dishAvailability,
   } = dishDetails
 
@@ -32,7 +32,7 @@ const DishItem = ({
       <button className="button" type="button" onClick={onDecreaseQuantity}>
         -
       </button>
-      <p className="quantity">{getQuantity}</p>
+      <p className="quantity">{getQuantity()}</p>
       <button className="button" type="button" onClick={onIncreaseQuantity}>
         +
       </button>
@@ -50,7 +50,7 @@ const DishItem = ({
       </div>
       <div className="dish-details-container">
         <h1 className="dish-name">{dishName}</h1>
-        <p className="dish-currency-prince">
+        <p className="dish-currency-price">
           {dishCurrency} {dishPrice}
         </p>
         <p className="dish-description">{dishDescription}</p>
@@ -58,11 +58,11 @@ const DishItem = ({
         {!dishAvailability && (
           <p className="not-availability-text text-danger">Not available </p>
         )}
-        {addOnCat.length !== 0 && (
+        {addoncat.length !== 0 && (
           <p className="addon-availability-text">Customizations available</p>
         )}
       </div>
-      <p className="dish-calories text-warning">{dishCalories} Calories</p>
+      <p className="dish-calories text-warning">{dishCalories} calories</p>
       <img className="dish-img" alt={dishName} src={dishImage} />
     </li>
   )
