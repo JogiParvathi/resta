@@ -56,11 +56,12 @@ const Home = () => {
         dishCurrency: eachDish.dish_currency,
         dishCalories: eachDish.dish_calories,
         dishDescription: eachDish.dish_description,
-        dishAvailability: eachDish.dish_availability,
-        dishType: eachDish.dish_type,
+        dishAvailability: eachDish.dish_Availability,
+        dishType: eachDish.dish_Type,
         addoncat: eachDish.addoncat,
       })),
     }))
+
   const fetchRestaurantApi = async () => {
     const api =
       'https://apis2.ccbp.in/restaurant-app/restaurant-menu-list-details'
@@ -74,6 +75,7 @@ const Home = () => {
 
   useEffect(() => {
     fetchRestaurantApi()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   const onUpdateActiveCategoryIdx = menuCategoryId =>
@@ -88,7 +90,7 @@ const Home = () => {
         <li
           className={`each-tab-item ${
             eachCategory.menuCategoryId === activeCategoryId
-              ? 'active-tab-ietm'
+              ? 'active-tab-item'
               : ''
           }`}
           key={eachCategory.menuCategoryId}
@@ -96,7 +98,7 @@ const Home = () => {
         >
           <button
             type="button"
-            className="mt-0 mb-0 ms-0 me-2 tab-category-button"
+            className="mt-0 mb-0 ms-2 me-2 tab-category-button"
           >
             {eachCategory.menuCategory}
           </button>
@@ -110,7 +112,7 @@ const Home = () => {
     )
 
     return (
-      <ul className="m-0 d-flex flex-column dish-lists-container">
+      <ul className="m-0 d-flex flex-column dishes-list-container">
         {categoryDishes.map(eachDish => (
           <DishItem
             key={eachDish.dishId}
