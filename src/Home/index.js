@@ -1,6 +1,6 @@
 import {useState, useEffect} from 'react'
 
-import Header from '../Header'
+import Header from '.../Header'
 import DishItem from '../DishItem'
 
 import './index.css'

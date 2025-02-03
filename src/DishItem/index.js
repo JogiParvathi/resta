@@ -15,7 +15,7 @@ const DishItem = ({
     dishDescription,
     dishImage,
     dishCalories,
-    addonCat,
+    addoncat,
     dishAvailability,
   } = dishDetails
 
@@ -56,7 +56,7 @@ const DishItem = ({
         {!dishAvailability && (
           <p className="not-availability-text text-danger">Not available</p>
         )}
-        {addonCat.length !== 0 && (
+        {addoncat.length !== 0 && (
           <p className="addon-availability-text">Customizations available</p>
         )}
       </div>
