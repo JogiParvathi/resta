@@ -56,7 +56,7 @@ const DishItem = ({
         {!dishAvailability && (
           <p className="not-availability-text text-danger">Not available</p>
         )}
-        {addoncat.length !== 0 && (
+          {Array.isArray(addoncat) && addoncat.length !== 0 && (
           <p className="addon-availability-text">Customizations available</p>
         )}
       </div>
