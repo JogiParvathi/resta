@@ -58,7 +58,7 @@ const Home = () => {
         dishDescription: eachDish.dish_description,
         dishAvailability: eachDish.dish_Availability,
         dishType: eachDish.dish_Type,
-        addoncat: eachDish.addoncat,
+        addonCat: eachDish.addonCat,
       })),
     }))
 
